@@ -19,4 +19,5 @@ tools = load_tools(['serpapi', "llm-math"], llm=llm_openai.llm)
 agent = initialize_agent(tools, llm=llm_openai.llm, agent="zero-shot-react-description", verbose=True)
 
 #問問題:
-agent.run("今日天氣如何? 明天會下雨嗎? 有沒有什麼明天可以做的活動?")
+#agent.run("請使用中文回答: 現在最新的開源LLM模型是什麼? 給我一個清單, 另外給我一個簡單的說明")
+agent.run("請使用中文回答: 幫我出一些開源的LLM模型")
